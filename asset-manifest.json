@@ -1,0 +1,19 @@
+{
+  "files": {
+    "main.css": "/react-01/static/css/main.34e0d6a0.css",
+    "main.js": "/react-01/static/js/main.7ac32bc9.js",
+    "static/media/seabckrnd2.jpg": "/react-01/static/media/seabckrnd2.0dc6cbf8fcec1012f3e1.jpg",
+    "static/media/sschat.png": "/react-01/static/media/sschat.46d45aeba890a3b09c56.png",
+    "static/media/sscshirt.png": "/react-01/static/media/sscshirt.d5f4fc4fe0dae3664984.png",
+    "static/media/sschoodie.png": "/react-01/static/media/sschoodie.4e3a5829de816c4fd185.png",
+    "static/media/nazare.jpg": "/react-01/static/media/nazare.0692eb8b2c40dc70e4d9.jpg",
+    "static/media/pipeline.jpg": "/react-01/static/media/pipeline.4f190027fc0060cb3e05.jpg",
+    "index.html": "/react-01/index.html",
+    "main.34e0d6a0.css.map": "/react-01/static/css/main.34e0d6a0.css.map",
+    "main.7ac32bc9.js.map": "/react-01/static/js/main.7ac32bc9.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.34e0d6a0.css",
+    "static/js/main.7ac32bc9.js"
+  ]
+}
