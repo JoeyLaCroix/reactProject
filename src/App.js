@@ -10,12 +10,14 @@ function App() {
   return (
     <BrowserRouter basename={process.env.PUBLIC_URL}>
       <Routes>
-        <Route path="/" element={<Home />} />
+      <Route path="/">
+        <Route index element={<Home />} />
         <Route path="/aboutus" element={<Aboutus />} />
         <Route path="/checkout" element={<Checkout />} />
         <Route path="/nci" element={<Nci />} />
         <Route path="/oursurfers" element={<Oursurfers />} />
         <Route path="/surfers" element={<Surfers />} />
+        </Route >
       </Routes>
     </BrowserRouter>
   );  
