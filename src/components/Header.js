@@ -25,7 +25,7 @@ function Header() {
                     <li><Link to="/aboutus">About Us</Link></li> 
                     <li><Link to="/nci">Our Items</Link></li> 
                     <li><Link to="/oursurfers">Our Surfers</Link></li> 
-                    <li><Link to="/checkout">Checkout</Link></li> 
+                    <li><Link to="/checkout">Checkout</Link></li>
                 </ul>  
 
                 <nav id="main-items" class="hidden">
