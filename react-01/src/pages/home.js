@@ -1,11 +1,27 @@
 import "../css/home.css";
-    
+import Header from "../components/Header";
+import Footer from "../components/Footer";
+import pipeline from "../images/pipeline.jpg";
+import nazare from "../images/nazare.jpg";
+import sschat from "../images/sschat.png";
+import logo2RemoveBg from "../images/logo2-removebg.png";
+import sscshirt from "../images/sscshirt.png";
+import sschoodie from "../images/sschoodie.png";  
+import firststreetjetty from "../images/first street jetty.jpg";
+import croatanjetty from "../images/croatanjetty.jpg";
+import fsndpier from "../images/42ndpier.jpg";
+import logoremovebg from "../images/logo-removebg.png";
+import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
+
 function Home() {
   return (
+    <>
+    <Header />
+    
     <div className="Home">
       <div id="middleimages">
         <section id="middlemain">
-          <img id="locations" src="images/pipeline.jpg" alt="Pipeline" />
+          <img id="locations" src={pipeline} alt="Pipeline" />
         </section>
         <section id="middlemain">
           <h3>Welcome!</h3>
@@ -20,34 +36,34 @@ function Home() {
           </p>
         </section>
         <section id="middlemain">
-          <img id="locations" src="images/nazare.jpg" alt="Nazare" />
+          <img id="locations" src={nazare} alt="Nazare" />
         </section>
       </div>
 
       <div id="main-bottom">
         <section id="shoplink">
-          <a href="nci.html">
+          <Link to="/nci">
             <h3>Hats</h3>
-            <img id="this" src="images/sschat.png" alt="Hats" />
-          </a>
+            <img id="this" src={sschat} alt="Hats" />
+          </Link>
         </section>
         <section id="shoplink">
-          <img src="images/logo2-removebg.png" alt="Logo" />
+          <img src={logo2RemoveBg} alt="Logo" />
         </section>
         <section id="shoplink">
-          <a href="nci.html">
+        <Link to="/nci">
             <h3>Shirts</h3>
-            <img id="this" src="images/sscshirt.png" alt="Shirts" />
-          </a>
+            <img id="this" src={sscshirt} alt="Shirts" />
+          </Link>
         </section>
         <section id="shoplink">
-          <img src="images/logo2-removebg.png" alt="Logo" />
+           <img src={logo2RemoveBg} alt="Logo" />
         </section>
         <section id="shoplink">
-          <a href="nci.html">
+        <Link to="/nci">
             <h3>Hoodies</h3>
-            <img id="this" src="images/sschoodie.png" alt="Hoodies" />
-          </a>
+            <img id="this" src={sschoodie} alt="Hoodies" />
+          </Link>
         </section>
       </div>
 
@@ -55,7 +71,7 @@ function Home() {
         <h3>Famous Surfing locations we represent:</h3>
         <section id="spot">
           <h4>First Street Jetty</h4>
-          <img src="images/first street jetty.jpg" alt="First Street Jetty" />
+          <img src={firststreetjetty} alt="First Street Jetty" />
           <br />
           <a href="https://www.surfline.com/surf-report/1st-street-jetty/584204214e65fad6a7709ce7?camId=5df27801194164e61b2403c1">
             Tap to view Cam &copy;Surfline
@@ -63,7 +79,7 @@ function Home() {
         </section>
         <section id="spot">
           <h4>Croatan Jetty</h4>
-          <img src="images/croatanjetty.jpg" alt="Croatan Jetty" />
+          <img src={croatanjetty} alt="Croatan Jetty" />
           <br />
           <a href="https://www.surfline.com/surf-report/croatan-jetty/584204214e65fad6a7709ce9">
             Tap to view Cam &copy;Surfline
@@ -71,7 +87,7 @@ function Home() {
         </section>
         <section id="spot">
           <h4>42nd Street Pier</h4>
-          <img src="images/42ndpier.jpg" alt="42nd Street Pier" />
+          <img src={fsndpier} alt="42nd Street Pier" />
           <br />
           <a href="https://www.surfline.com/surf-report/north-end/5842041f4e65fad6a7708a23?camId=5834995b3421b20545c4b53b">
             Tap to view Cam &copy;Surfline
@@ -80,9 +96,11 @@ function Home() {
       </div>
 
       <div id="aboutusimage">
-        <img src="images/logo-removebg.png" alt="Southern Surf Co Logo" />
+        <img src={logoremovebg} alt="Southern Surf Co Logo" />
       </div>
+      <Footer />
     </div>
+    </>
   );
 }
 

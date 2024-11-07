@@ -1,0 +1,66 @@
+:root{
+    --black: black;
+    --beach: rgb(204, 162, 126);
+    --ocean: rgb(164, 213, 239);
+    --darkblue: #1e4057;
+    --white: white;
+    --tan: rgb(210, 180, 140);
+    --navy: rgb(1, 1, 40);
+}
+
+/*_______________________________________________________*/
+
+body{
+    background-color:var(--ocean)
+}
+#checkout-main{
+    text-align: center;
+}
+.surf-main{
+    text-align: center;
+}
+.title{
+    font-family: fantasy copperplate, Papyrus, fantasy;
+    color:var(--ocean);
+    margin:0px;
+    padding:25px;
+    border-radius: 10px;
+    top:0px;
+    position: relative;
+    background-color: var(--darkblue);
+    border: 4px solid var(--black);
+}
+.title h1{
+    font-size: 3em;
+    text-align: center;
+}
+.title img{
+    display:none;
+}
+#aboutusimage{
+    text-align: center;
+    size: 50%;
+}
+
+/*_______________________________________________________*/
+
+@media only screen and (min-width: 600px) {
+
+    #header-nav ul,#middleimages,#main-bottom,#aboutus-main,#checkout-main,#surf-main,#nci-main,#title,#spots,#main-surf-list{
+        display: flex;
+    }
+    #main-surf-list{
+        flex-wrap:wrap;
+    }
+    #header-nav li,#img-logo,#shoplink,#p,#column1,#column2,#middlemain,#mainnci,#title section,#spot{
+        flex:1;
+        flex-wrap:wrap;
+    }
+    #nav-toggle{
+        display:none;
+    }
+    #title img{
+        display:inline-block;
+    }
+    
+}
