@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/reactproject/static/css/main.e64ecdbb.css",
-    "main.js": "/reactproject/static/js/main.02f07259.js",
-    "static/media/seabckrnd2.jpg": "/reactproject/static/media/seabckrnd2.0dc6cbf8fcec1012f3e1.jpg",
-    "static/media/sschat.png": "/reactproject/static/media/sschat.46d45aeba890a3b09c56.png",
-    "static/media/sscshirt.png": "/reactproject/static/media/sscshirt.d5f4fc4fe0dae3664984.png",
-    "static/media/sschoodie.png": "/reactproject/static/media/sschoodie.4e3a5829de816c4fd185.png",
-    "static/media/nazare.jpg": "/reactproject/static/media/nazare.0692eb8b2c40dc70e4d9.jpg",
-    "static/media/pipeline.jpg": "/reactproject/static/media/pipeline.4f190027fc0060cb3e05.jpg",
-    "index.html": "/reactproject/index.html",
-    "main.e64ecdbb.css.map": "/reactproject/static/css/main.e64ecdbb.css.map",
-    "main.02f07259.js.map": "/reactproject/static/js/main.02f07259.js.map"
+    "main.css": "/reactProject/static/css/main.92e7b45a.css",
+    "main.js": "/reactProject/static/js/main.192316f2.js",
+    "static/media/seabckrnd2.jpg": "/reactProject/static/media/seabckrnd2.0dc6cbf8fcec1012f3e1.jpg",
+    "static/media/sschat.png": "/reactProject/static/media/sschat.46d45aeba890a3b09c56.png",
+    "static/media/sscshirt.png": "/reactProject/static/media/sscshirt.d5f4fc4fe0dae3664984.png",
+    "static/media/sschoodie.png": "/reactProject/static/media/sschoodie.4e3a5829de816c4fd185.png",
+    "static/media/nazare.jpg": "/reactProject/static/media/nazare.0692eb8b2c40dc70e4d9.jpg",
+    "static/media/pipeline.jpg": "/reactProject/static/media/pipeline.4f190027fc0060cb3e05.jpg",
+    "index.html": "/reactProject/index.html",
+    "main.92e7b45a.css.map": "/reactProject/static/css/main.92e7b45a.css.map",
+    "main.192316f2.js.map": "/reactProject/static/js/main.192316f2.js.map"
   },
   "entrypoints": [
-    "static/css/main.e64ecdbb.css",
-    "static/js/main.02f07259.js"
+    "static/css/main.92e7b45a.css",
+    "static/js/main.192316f2.js"
   ]
 }
