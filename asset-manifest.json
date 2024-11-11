@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/reactProject/static/css/main.64bad2cf.css",
-    "main.js": "/reactProject/static/js/main.39e5e004.js",
+    "main.css": "/reactProject/static/css/main.58b1d087.css",
+    "main.js": "/reactProject/static/js/main.96173500.js",
     "static/media/seabckrnd2.jpg": "/reactProject/static/media/seabckrnd2.0dc6cbf8fcec1012f3e1.jpg",
     "static/media/sschat.png": "/reactProject/static/media/sschat.46d45aeba890a3b09c56.png",
     "static/media/sscshirt.png": "/reactProject/static/media/sscshirt.d5f4fc4fe0dae3664984.png",
@@ -9,11 +9,11 @@
     "static/media/nazare.jpg": "/reactProject/static/media/nazare.0692eb8b2c40dc70e4d9.jpg",
     "static/media/pipeline.jpg": "/reactProject/static/media/pipeline.4f190027fc0060cb3e05.jpg",
     "index.html": "/reactProject/index.html",
-    "main.64bad2cf.css.map": "/reactProject/static/css/main.64bad2cf.css.map",
-    "main.39e5e004.js.map": "/reactProject/static/js/main.39e5e004.js.map"
+    "main.58b1d087.css.map": "/reactProject/static/css/main.58b1d087.css.map",
+    "main.96173500.js.map": "/reactProject/static/js/main.96173500.js.map"
   },
   "entrypoints": [
-    "static/css/main.64bad2cf.css",
-    "static/js/main.39e5e004.js"
+    "static/css/main.58b1d087.css",
+    "static/js/main.96173500.js"
   ]
 }
