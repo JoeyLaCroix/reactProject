@@ -70,12 +70,6 @@ body{
     border: 3px solid var(--black);
    
 }
-#main-surf-list p{
-    color: white;
-    font-size: 20px;
-    text-align: center;
-    background-color: var(--darkblue);
-}
 
 /*_______________________________________________________*/
 

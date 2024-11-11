@@ -6,7 +6,6 @@ import SurfList from "./SurfList";
 const Surf = () => {
   const [surfers, setSurfers] = useState([]);
 
-  //wait until after page is rendered to do the asyncronous loading
   useEffect(() => {
     (async () => {
       const response = await axios.get("http://localhost:3001/api/surfers");
@@ -16,11 +15,14 @@ const Surf = () => {
 
   return (
     <div className="surfers-list">
-      <h3>Our Surfers</h3>
       <div className="columns">
         {surfers.map((surfList) => (
           <SurfList
             name={surfList.name}
+            hometown={surfList.hometown}
+            surftype={surfList.surftype}
+            image={surfList.img_name}
+            bio={surfList.bio}
           />
         ))}
       </div>
