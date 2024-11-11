@@ -3,6 +3,8 @@ import Header from "../components/Header";
 import Footer from "../components/Footer";
 import lanikai from "../images/lani-kai.jpg";
 import kanoa from "../images/kanoa.jpg";
+import SurfList from "../components/SurfList";
+import Surf from "../components/Surf";
 
 function Surfers() {
 return(
@@ -27,6 +29,7 @@ return(
                 <p>Lani Kai is a professional surfer from the island of Maui. She started surfing at a young age and quickly rose through the ranks to become one of the best to do it in Hawaii. Lani is known for her powerful style and her ability to pull off difficult maneuvers with ease. She is sponsored by several major surf brands and is considered one of the top surfers in the world.</p>
              </section>
         </div>
+        <Surf />
         <Footer />
     </div>
     </>
