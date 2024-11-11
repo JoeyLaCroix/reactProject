@@ -2,6 +2,7 @@ import "../css/aboutus.css";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 import logo2RemoveBg from "../images/logo2-removebg.png";
+import Contact from "../components/Contact";
 
 function Aboutus() {
 return(
@@ -27,6 +28,9 @@ return(
        <p>Virginia Beach, Virginia, with its vibrant surf culture and Atlantic waves, is the perfect base for Southern Surf Co. Inspired by the coastal lifestyle, Southern Surf Co. designs apparel and gear that capture the spirit of Virginia Beach’s surf community, bringing a piece of that energy to surfers everywhere.</p>
    </section>
    </div>
+
+    <Contact />
+
    <section id="aboutusimage">
             <img id="this" src={logo2RemoveBg} alt="logo"/>
     </section>

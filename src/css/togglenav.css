@@ -1,0 +1,43 @@
+:root{
+  --black: black;
+  --beach: rgb(204, 162, 126);
+  --ocean: rgb(164, 213, 239);
+  --darkblue: #1e4057;
+  --white: white;
+  --tan: rgb(210, 180, 140);
+  --navy: rgb(1, 1, 40);
+}
+  .navbar-toggle {
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    margin-right: 1rem;
+  }
+  
+  .navbar-toggle .bar {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin: 4px 0;
+  }
+  .nav-links {
+    display: none;
+  }
+  .nav-links.active {
+    display: flex;
+  }
+  @media (max-width: 768px) {
+    .nav-links {
+      display: none;
+      flex-direction: column;
+      top: 50px;
+      left: 0;
+      width: 100%;
+      background-color: var(--darkblue);
+      color: var(--ocean);
+    }
+  
+    .nav-links.active {
+      display: flex;
+    }
+  }
