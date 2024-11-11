@@ -8,7 +8,7 @@ const Surf = () => {
 
   useEffect(() => {
     (async () => {
-      const response = await axios.get("http://localhost:3001/api/surfers");
+      const response = await axios.get("https://projectbackend-qwro.onrender.com/api/surfers");
       setSurfers(response.data);
     })();
   }, []);

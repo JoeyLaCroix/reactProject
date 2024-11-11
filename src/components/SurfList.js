@@ -4,7 +4,7 @@ const SurfList = (surfList) => {
             <h3>{surfList.name}</h3>
             <h4>Hometown: {surfList.hometown}</h4>
             <h4>Surftype: {surfList.surftype}</h4>
-            <p><img src={"http://localhost:3001/images/"+surfList.image} alt={surfList.name} /></p>
+            <p><img src={"https://projectbackend-qwro.onrender.com/images/"+surfList.image} alt={surfList.name} /></p>
             <p>{surfList.bio}</p>
         </section>
     );
