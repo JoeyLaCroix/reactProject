@@ -9,7 +9,7 @@ const Surf = () => {
   const [surfers, setSurfers] = useState([]);
 
   const addSurfer = (surfer) =>{
-    setSurfers ((surfer)=>[...surfers, surfer]);
+    setSurfers((surfer)=>[...surfers, surfer]);
 };
 const [showAddDialog, setShowAddDialog] = React.useState(false);
 
@@ -27,8 +27,9 @@ const closeDialog = () => {
     })();
   }, []);
 
+  
+
   return (
-    <div className="surfers-list">
       <div className="columns">
       <h1 id="surftitle">Our Surfers:</h1>
         <div id="button">
@@ -37,18 +38,27 @@ const closeDialog = () => {
         {showAddDialog ?(<AddDialog closeDialog={closeDialog} addSurfer={addSurfer}/>):("")}
         </div>
 
-        {surfers.map((surfList) => (
-          <SurfList
-            name={surfList.name}
-            hometown={surfList.hometown}
-            surftype={surfList.surftype}
-            image={surfList.img_name}
-            bio={surfList.bio}
-          />
-        ))}
+        {surfers.length > 0 ? (
+          surfers.map((surfList) => (
+
+            <SurfList
+              key={surfList.name}
+              name={surfList.name}
+              hometown={surfList.hometown}
+              surftype={surfList.surftype}
+              image={surfList.img_name}
+              bio={surfList.bio}
+            />
+            
+          ))
+        ) : (
+          <p>Loading surfers...</p> // Or show a loading spinner
+        )}
+        
       </div>
-    </div>
+  
   );
+
 };
 
 export default Surf;

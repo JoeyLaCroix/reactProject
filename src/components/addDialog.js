@@ -5,7 +5,19 @@ const AddDialog = (props) => {
     const [inputs, setInputs] = useState({});
     const [result, setResult] = useState("");
 
-    const onSubmit = async(event) =>{
+    const handleChange = (event) =>{
+        const name = event.target.name;
+        const value = event.target.value;
+        setInputs(values => ({...values, [name]: value}));
+    };
+
+    const handleImageChange = (event) => {
+        const name = event.target.name;
+        const value = event.target.files[0];
+        setInputs((values) => ({ ...values, [name]: value }));
+      };
+
+      const onSubmit = async(event) =>{
         event.preventDefault();
         setResult("Welcome to the Team🤙");
         const formData = new FormData(event.target);
@@ -26,19 +38,6 @@ const AddDialog = (props) => {
       }
     };
 
-    const handleChange = (event) =>{
-        const name = event.target.name;
-        const value = event.target.value;
-        setInputs(values => ({...values, [name]: value}));
-    };
-
-    const handleImageChange = (event) => {
-        const name = event.target.name;
-        const value = event.target.files[0];
-        setInputs((values) => ({ ...values, [name]: value }));
-      };
-
-
     return(
             <div id="add-dialog" className="w3-modal">
               <div className="w3-modal-content">
@@ -52,8 +51,8 @@ const AddDialog = (props) => {
                   </span>
                   <form id="add-property-form" onSubmit={onSubmit}>
                     <p>
-                        <label htmlFor = "name">Name:</label>
-                        <input type="text" id="name" name="name"  value={inputs.name || ""} onChange={handleChange} required />
+                     <label htmlFor = "name">Name:</label>
+                     <input type="text" id="name" name="name"  value={inputs.name || ""} onChange={handleChange} required />
                     </p>
                     <p>
                     <label htmlFor = "hometown">Hometown:</label>
