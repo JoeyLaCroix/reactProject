@@ -1,0 +1,28 @@
+:root{
+    --black: black;
+    --beach: rgb(204, 162, 126);
+    --ocean: rgb(164, 213, 239);
+    --darkblue: #1e4057;
+    --white: white;
+    --tan: rgb(210, 180, 140);
+    --navy: rgb(1, 1, 40);
+}
+#button{
+    text-align: center;
+    background-color:var(--darkblue);
+    border: 3px solid black;
+    border-radius: 15px;
+}
+#add-surfer{
+    background-color: var(--ocean);
+    border: 3px solid black;
+    padding: 10px;
+    margin: 10px;
+    text-align: center;
+    border-radius:15px;
+    font-size:1.5em;
+    font-family:fantasy;
+}
+#add-surfer:hover{
+    background-color: var(--darkblue);
+}

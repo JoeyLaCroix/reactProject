@@ -1,0 +1,53 @@
+@import url("https://www.w3schools.com/w3css/4/w3.css");
+
+:root{
+    --black: black;
+    --beach: rgb(204, 162, 126);
+    --ocean: rgb(164, 213, 239);
+    --darkblue: #1e4057;
+    --white: white;
+    --tan: rgb(210, 180, 140);
+    --navy: rgb(1, 1, 40);
+}
+
+#dialog-section {
+    position: relative;
+  }
+#add-dialog{
+    color: var(--ocean);
+}
+#add-dialog &times{
+    color: var(--ocean);
+}
+  
+  #add-dialog,
+  #edit-dialog,
+  #delete-dialog {
+    display: block;
+  }
+  
+  #delete-content {
+    margin-bottom: 10px;
+  }
+  
+  #img-prev {
+    max-width: 100%;
+  }
+  
+  #delete-dialog button {
+    margin-right: 10px;
+  }
+  
+  @media only screen and (min-width: 600px) {
+    #img-prev-section {
+      flex: 1;
+    }
+  
+    #img-prev {
+      max-width: 100%;
+    }
+  
+    #img-upload {
+      flex: 6;
+    }
+  }
