@@ -8,8 +8,9 @@ import "../css/surfadd.css";
 const Surf = () => {
   const [surfers, setSurfers] = useState([]);
 
-  const addSurfer = (surfer) =>{
-    setSurfers((surfer)=>[...surfers, surfer]);
+  const addSurfer = (newSurfer) =>{
+    console.log('My surfer is ' + newSurfer);
+    setSurfers((surfer)=>[...surfers, newSurfer]);
 };
 const [showAddDialog, setShowAddDialog] = React.useState(false);
 
