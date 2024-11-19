@@ -22,7 +22,7 @@ const AddDialog = (props) => {
         setResult("Welcome to the Team🤙");
         const formData = new FormData(event.target);
 
-    const response = await fetch("http://localhost:3001/api/surfers", {
+    const response = await fetch("https://projectbackend-qwro.onrender.com/api/surfers", {
       method: "POST",
       body: formData,
     });
