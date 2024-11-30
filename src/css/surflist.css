@@ -1,0 +1,7 @@
+section a{
+    color: var(--ocean);
+    text-decoration: none;
+}
+a:hover{
+    color: var(--darkblue);
+}
