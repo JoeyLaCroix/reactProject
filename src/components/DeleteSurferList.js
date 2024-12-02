@@ -5,7 +5,7 @@ const DeleteSurferList = (props) => {
   const [result, setResult] = useState("");
 
   const deleteSurferList = async() => {
-   const response = await fetch(`https://projectbackend-qwro.onrender.com/${props._id}`,{
+   const response = await fetch(`https://projectbackend-qwro.onrender.com/api/surfers/${props._id}`,{
     method:"DELETE"
    });
 

@@ -2,7 +2,7 @@ import "../css/surflist.css";
 import React, { useState } from "react";
 import EditHousePlan from "./EditSurferList";
 import DeleteSurferList from "./DeleteSurferList";
-
+import EditSurferList from "./EditSurferList";
 
 const SurfList = (props) => {
     const [showEditDialog, setShowEditDialog] = useState(false);
@@ -41,9 +41,26 @@ const SurfList = (props) => {
           {showDeleteDialog ? (
             <DeleteSurferList
               closeDialog={closeDeleteDialog}
-              hideHousePlan = {hideSurferList}
+              hideSurferList = {hideSurferList}
               name={SurfList.name}
-              id={SurfList._id}
+              _id={SurfList._id}
+            />
+          ) : (
+            ""
+          )}
+
+          {showEditDialog ? (
+            <EditSurferList
+              closeDialog={closeEditDialog}
+              updateSurfer = {editSurferList}
+              _id={SurfList._id}
+              name={SurfList.name}
+              hometown={SurfList.hometown}
+              surftype={SurfList.surftype}
+              image={SurfList.image_name}
+              bio={SurfList.bio}
+              
+             
             />
           ) : (
             ""
@@ -51,7 +68,7 @@ const SurfList = (props) => {
 
         <section className="surfers">
             <section id="change-buttons">
-                  <a href="#" >
+            <a href="#" onClick={openEditDialog}>
                     &#9998; 
                   </a>
                   
@@ -59,11 +76,11 @@ const SurfList = (props) => {
                     &#x2715; 
                   </a>
             </section>
-            <h3>Name:{props.name}</h3>
-            <h4>Hometown:{props.hometown}</h4>
-            <h4>SurfType:{props.surftype}</h4>
+            <h3>{props.name}</h3>
+            <h4>{props.hometown}</h4>
+            <h4>{props.surftype}</h4>
             <p><img src={"https://projectbackend-qwro.onrender.com/images/"+props.image} alt={props.name} /></p>
-            <p>Bio:{props.bio}</p>
+            <p>{props.bio}</p>
         </section>
             </div>
           ) : (

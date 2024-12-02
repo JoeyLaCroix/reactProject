@@ -44,6 +44,7 @@ const closeDialog = () => {
 
             <SurfList
               key={surfList.name}
+              _id={surfList._id}
               name={surfList.name}
               hometown={surfList.hometown}
               surftype={surfList.surftype}
