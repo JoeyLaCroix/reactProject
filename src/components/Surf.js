@@ -3,6 +3,7 @@ import axios from "axios";
 import SurfList from "./SurfList";
 import AddDialog from "../components/addDialog";
 import "../css/surfadd.css";
+import "../css/spinner.css";
 
 
 const Surf = () => {
@@ -35,7 +36,6 @@ const closeDialog = () => {
       <h1 id="surftitle">Our Surfers:</h1>
         <div id="button">
         <button id="add-surfer" onClick = {openDialog}>Become a SSC representative</button>
-        
         {showAddDialog ?(<AddDialog closeDialog={closeDialog} addSurfer={addSurfer}/>):("")}
         </div>
 
@@ -54,7 +54,7 @@ const closeDialog = () => {
             
           ))
         ) : (
-          <p>Loading surfers...</p> // Or show a loading spinner
+          <div class="spinner"></div>
         )}
         
       </div>

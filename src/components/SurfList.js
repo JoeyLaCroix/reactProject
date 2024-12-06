@@ -1,6 +1,5 @@
 import "../css/surflist.css";
 import React, { useState } from "react";
-import EditHousePlan from "./EditSurferList";
 import DeleteSurferList from "./DeleteSurferList";
 import EditSurferList from "./EditSurferList";
 
@@ -76,11 +75,11 @@ const SurfList = (props) => {
                     &#x2715; 
                   </a>
             </section>
-            <h3>{props.name}</h3>
-            <h4>{props.hometown}</h4>
-            <h4>{props.surftype}</h4>
-            <p><img src={"https://projectbackend-qwro.onrender.com/images/"+props.image} alt={props.name} /></p>
-            <p>{props.bio}</p>
+            <h3>{SurfList.name}</h3>
+            <h4>{SurfList.hometown}</h4>
+            <h4>{SurfList.surftype}</h4>
+            <p><img src={"https://projectbackend-qwro.onrender.com/images/"+SurfList.image} alt={SurfList.name} /></p>
+            <p>{SurfList.bio}</p>
         </section>
             </div>
           ) : (

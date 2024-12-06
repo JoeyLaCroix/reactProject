@@ -69,26 +69,30 @@ const EditSurferList = (props) => {
                     <input type="text" id="surftype" name="surftype" value={inputs.surftype || ""} onChange={handleChange} required />
                     </p>
                     <section className="columns">
-                    <p id="img-prev-section">
-                        <img
-                        id="img-prev"
-                        src={
-                            inputs.img != null ? URL.createObjectURL(inputs.img) : ""
-                        }
-                        alt=""
-                        />
-                    </p>
-                    <p id="img-upload">
-                        <label htmlFor="img">Upload Image:</label>
-                        <input
-                        type="file"
-                        id="img"
-                        name="img"
-                        onChange={handleImageChange}
-                        accept="image/*"
-                        />
-                    </p>
-                    </section>
+              <p id="img-prev-section">
+                <img
+                  id="img-prev"
+                  src={
+                    inputs.img != null
+                      ? URL.createObjectURL(inputs.img)
+                      : inputs.prev_img != null
+                      ? `https://projectbackend-qwro.onrender.com/${inputs.prev_img}`
+                      : ""
+                  }
+                  alt=""
+                />
+              </p>
+              <p id="img-upload">
+                <label htmlFor="img">Upload Image:</label>
+                <input
+                  type="file"
+                  id="img"
+                  name="img"
+                  onChange={handleImageChange}
+                  accept="image/*"
+                />
+              </p>
+            </section>
                     <p>
                         <label htmlFor = "bio">Bio:</label>
                         <input type="text" id="bio" name="bio" value={inputs.bio || ""} onChange={handleChange} required/>
